@@ -7,6 +7,4 @@ import data from "../assets/data.json";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = "Plants";
-  plants: {name: string, icon: string, category: string, sun: number,wet: string, care: string }[] = [...data];
 }

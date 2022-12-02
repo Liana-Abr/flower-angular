@@ -1,22 +1,8 @@
-.container{
-  width: 720px;
-  padding: 30px;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px;
-    .card{
-      padding: 30px;
-      border: 1px dotted;
-      border-radius: 10px;
-      display: grid;
-      gap: 20px;
-      justify-content: center;
-      font-family: sans-serif;
-        i{
-          font-size: 2rem;
-          text-align: center;
-        }
+*{
+  font-family: 'Oswald', sans-serif;
+}
+home-page{
 
-    }
+    background-color: lightgreen;
+
 }

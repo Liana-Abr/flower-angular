@@ -1,0 +1,29 @@
+<div class="container" *ngFor="let plant of plants">
+  <div class="box">
+    <div class="l">
+      <div class="img" >
+        <img [src]="plant.images">
+      </div>
+    </div>
+<!--    <div class="values" *ngFor="let plant of plants">-->
+    <div class="values">
+      <h2 class="title">Температура</h2>
+      <p class="value">{{plant.temperature}}</p>
+      <h2 class="title">Полив</h2>
+      <p class="value">{{plant.wetering}}</p>
+      <h2 class="title">Солнце</h2>
+      <p class="value">{{plant.sunlight}}</p>
+    </div>
+
+    <!--      <i class="fa-solid fa-clover"></i>-->
+
+    <div class="r">
+<!--      <h2 class="name">{{plantName}}</h2>-->
+      <h2>{{plant.name}}</h2>
+      <p class="desc">{{plant.description}}</p>
+    </div>
+  </div>
+
+
+
+</div>

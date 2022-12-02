@@ -1,74 +1,57 @@
 [
   {
     "name": "Plant 1",
-    "icon": "fa-solid fa-tree",
-    "category": "cat1",
-    "sun": 20,
-    "wet": "30%",
-    "care": "Требует повышенного внимания/ не требует ухода"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Уличные",
+    "sunlight": "нужно",
+    "wetering": "2/в неделю",
+    "temperature": "20C"
   },
   {
     "name": "Plant 2",
-    "icon": "fa-solid fa-plant-wilt",
-    "category": "cat2",
-    "sun": 100,
-    "wet": "50%",
-    "care": "не требует ухода"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Домашние",
+    "sunlight": "нужно",
+    "wetering": "2/в неделю",
+    "temperature": "20C"
   },
   {
     "name": "Plant 3",
-    "icon": "fa-brands fa-canadian-maple-leaf",
-    "category": "cat1",
-    "sun": 100,
-    "wet": "20%",
-    "care": "Требует повышенного внимания"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Садовые",
+    "sunlight": "не обязательно",
+    "wetering": "2/в неделю",
+    "temperature": "35C"
   },
   {
     "name": "Plant 4",
-    "icon": "fa-solid fa-clover",
-    "category": "cat2",
-    "sun": 50,
-    "wet": "20%",
-    "care": "не требует ухода"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Уличные",
+    "sunlight": "нужно",
+    "wetering": "2/в неделю",
+    "temperature": "40C"
   },
   {
     "name": "Plant 5",
-    "icon": "fa-solid fa-plant-wilt",
-    "category": "cat1",
-    "sun": 50,
-    "wet": "30%",
-    "care": "не требует ухода"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Домашние",
+    "sunlight": "не обязательно",
+    "wetering": "2/в неделю",
+    "temperature": "36C"
   },
   {
     "name": "Plant 6",
-    "icon": "fa-solid fa-tree",
-    "category": "cat2",
-    "sun": 20,
-    "wet": "60%",
-    "care": "Требует повышенного внимания"
-  },
-  {
-    "name": "Plant 7",
-    "icon": "fa-solid fa-tree",
-    "category": "cat2",
-    "sun": 50,
-    "wet": "100%",
-    "care": "Требует повышенного внимания"
-  },
-  {
-    "name": "Plant 8",
-    "icon": "fa-solid fa-tree",
-    "category": "cat2",
-    "sun": 100,
-    "wet": "100%",
-    "care": "Требует повышенного внимания"
-  },
-  {
-    "name": "Plant 8",
-    "icon": "fa-solid fa-tree",
-    "category": "cat2",
-    "sun": 20,
-    "wet": "100%",
-    "care": "Требует повышенного внимания"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita?",
+    "images": "https://www.pngmart.com/files/21/Aesthetic-Plant-PNG-Free-Download.png",
+    "category": "Уличные",
+    "sunlight": "ненужно",
+    "wetering": "2/в неделю",
+    "temperature": "20C"
   }
+
 ]

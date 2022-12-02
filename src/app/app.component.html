@@ -3,37 +3,5 @@
 Влажность 0-100
 
 -->
-
-<div class="container">
-  <div *ngFor="let plant of plants">
-
-    <div *ngIf="plant.sun == 100" class="card" style="color: red" title="Солнце: 100">
-      <i [class]="plant.icon"></i>
-      {{plant.name}}
-    </div>
-
-    <div *ngIf="plant.sun === 50" class="card" style="color: green" title="Солнце: 50">
-      <i [class]="plant.icon"></i>
-      {{plant.name}}
-    </div>
-
-    <div *ngIf="plant.sun === 20" class="card" style="color: darkkhaki" title="Солнце: 20">
-      <i [class]="plant.icon"></i>
-      {{plant.name}}
-    </div>
-
-
-
-<!--    <ng-template #50>-->
-<!--      <div class="card" style="color: blue">-->
-<!--        <i [class]="plant.icon"></i>-->
-<!--        {{plant.name}}-->
-<!--      </div>-->
-<!--    </ng-template>-->
-
-
-
-  </div>
-<!--  <plant-card></plant-card>-->
-<!--  <plant-card [plantName]="plants[4].name" [plantIcon]="plants[4].icon"></plant-card>-->
-</div>
+<main-header></main-header>
+<router-outlet></router-outlet>

@@ -1,0 +1,6 @@
+<div class="container">
+  <a *ngFor="let item of data" [routerLink]="[item.name]">
+    <plant-card [plantName]="item.name" [plantIcon]="item.icon"></plant-card>
+  </a>
+</div>
+<button (click)="loadInfo()">Загрузить данные</button>

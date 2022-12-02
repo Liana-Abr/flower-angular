@@ -13,6 +13,7 @@ import {Component, Input} from "@angular/core";
       justify-content: center;
       font-family: sans-serif;
     }
+
     i{
       font-size: 2rem;
       text-align: center;

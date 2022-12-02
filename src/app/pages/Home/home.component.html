@@ -1,0 +1,50 @@
+<h1>Home Page</h1>
+
+<div class="container">
+  <a class="category" *ngFor="let c of category" [routerLink]="[c]" [routerLink]="[c]" >
+    <i></i>
+    <h3>{{c}}</h3>
+  </a>
+<!--  <a class="category">-->
+<!--    <i></i>-->
+<!--    <h3>Уличные</h3>-->
+<!--  </a>-->
+<!--  <a class="category">-->
+<!--    <i></i>-->
+<!--    <h3>Садовые</h3>-->
+<!--  </a>-->
+</div>
+
+<!--<app-inp [w]="word" (change)="setWord($event)"></app-inp>-->
+<!--<div class="container">-->
+<!--  <div style="grid-column-end: span 3">Количество {{word}}: {{plantsCnt}}</div>-->
+<!--  <div *ngFor="let plant of plants" >-->
+
+<!--    <div *ngIf="plant.sun == 100" class="card" style="color: red" title="Солнце: 100">-->
+<!--      <i [class]="plant.icon"></i>-->
+<!--      {{plant.name}}-->
+<!--    </div>-->
+
+<!--    <div *ngIf="plant.sun === 50" class="card" style="color: green" title="Солнце: 50">-->
+<!--      <i [class]="plant.icon"></i>-->
+<!--      {{plant.name}}-->
+<!--    </div>-->
+
+<!--    <div *ngIf="plant.sun === 20" class="card" style="color: darkkhaki" title="Солнце: 20">-->
+<!--      <i [class]="plant.icon"></i>-->
+<!--      {{plant.name}}-->
+<!--    </div>-->
+
+<!--    <button>Инфо</button>-->
+
+<!--    &lt;!&ndash;    <ng-template #50>&ndash;&gt;-->
+<!--    &lt;!&ndash;      <div class="card" style="color: blue">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <i [class]="plant.icon"></i>&ndash;&gt;-->
+<!--    &lt;!&ndash;        {{plant.name}}&ndash;&gt;-->
+<!--    &lt;!&ndash;      </div>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </ng-template>&ndash;&gt;-->
+<!--  </div>-->
+<!--  <add-btn [cnt]="plantsCnt" (inc)="inc()" (dec)="dec()"></add-btn>-->
+<!--  &lt;!&ndash;  <plant-card></plant-card>&ndash;&gt;-->
+<!--  &lt;!&ndash;  <plant-card [plantName]="plants[4].name" [plantIcon]="plants[4].icon"></plant-card>&ndash;&gt;-->
+<!--</div>-->

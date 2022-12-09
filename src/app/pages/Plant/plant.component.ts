@@ -10,8 +10,8 @@ import {ActivatedRoute} from "@angular/router";
 
 export class PlantPage{
   plantName: string = "";
-  // plants: {name: string, description: string, images: string, category: string, sunlight: number, wetering: string, temperature: string }[] = [...data];
-  plants: {name: string, description: string, images: string, category: string, sunlight: string, wetering: string, temperature: string }[] = [data[0]];
+  // plants: {name: string, description: string, images: string, category: string, sunlight: number, watering: string, temperature: string }[] = [...data];
+  plants: {name: string, description: string, images: string, category: string, sunlight: string, watering: string, temperature: string }[] = [data[0]];
   constructor(route: ActivatedRoute) {
     this.plantName = route.snapshot.params["plantName"];
 

@@ -23,6 +23,7 @@ const routers: Routes = [
   {path: "", component: HomePage},
   {path: "simple", component: SimplePage},
   {path: "about", component: AboutPage},
+  {path: "catalogue", component: CataloguePage},
   {path: "ajax", component: AjaxPage},
   {path: "ajax/:plantName", component: PlantPage},
   {path: "addplant", component: AddPlant},

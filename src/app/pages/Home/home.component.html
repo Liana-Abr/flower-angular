@@ -1,10 +1,21 @@
 <h1>Home Page</h1>
 
 <div class="container">
-  <a class="category" *ngFor="let c of category" [routerLink]="[c]" [routerLink]="[c]" >
+  <div class="info">
+    <h3>Информативный портал про растения</h3>
+    <img src="https://img.freepik.com/free-vector/hand-drawn-houseplant-collection_23-2148910610.jpg?w=2000"> 
+    <a class="link" routerLink="category">Перейти в Категории</a>
+  </div>
+ 
+
+
+  <!-- <a class="category" *ngFor="let c of category" [routerLink]="[c]" [routerLink]="[c]" >
     <i></i>
     <h3>{{c}}</h3>
-  </a>
+  </a> -->
+
+
+
 <!--  <a class="category">-->
 <!--    <i></i>-->
 <!--    <h3>Уличные</h3>-->

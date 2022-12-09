@@ -9,7 +9,6 @@ import data from "../../../assets/data.json";
 
 export class HomePage{
   title = "Plants";
-  category: string[] = ["Домашние", "Уличные", "Садовые"]
   // plants: {name: string, img: string, category: string, sun: number,wet: string, care: string }[] = [...data];
   // plantsCnt: number = this.plants.length;
   word: string = "растений";

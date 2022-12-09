@@ -14,7 +14,8 @@ import {HeaderComponent} from "./components/Header/header.component";
 import {NotFound} from "./pages/404/404.component";
 import {PlantPage} from "./pages/Plant/plant.component";
 import {AjaxPage} from "./pages/Ajax/ajax.component";
-import {CataloguePage} from "./pages/Catalogue/catalogue.component";
+import {CategoriesPage} from "./pages/Categories/categories.component";
+import {CategoryPage} from "./pages/Category/category.component";
 import {AddPlant} from "./pages/AddPlant/addplant.component";
 
 
@@ -23,7 +24,8 @@ const routers: Routes = [
   {path: "", component: HomePage},
   {path: "simple", component: SimplePage},
   {path: "about", component: AboutPage},
-  {path: "catalogue", component: CataloguePage},
+  {path: "category", component: CategoriesPage},
+  {path: "category/:category", component: CategoryPage},
   {path: "ajax", component: AjaxPage},
   {path: "ajax/:plantName", component: PlantPage},
   {path: "addplant", component: AddPlant},
@@ -49,8 +51,9 @@ const routers: Routes = [
     AboutPage,
     PlantPage,
     AddPlant,
-    NotFound,
-    CataloguePage,
+    NotFound,    
+    CategoryPage,
+    CategoriesPage,
     AjaxPage,
 
   ],

@@ -8,4 +8,5 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class CategoriesPage{
   category: string[] = ["Домашние", "Уличные", "Садовые"]
+
 }

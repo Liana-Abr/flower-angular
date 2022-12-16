@@ -1,6 +1,6 @@
 <h1>Add Plant Page</h1>
 <div class="container">
-  <form>
+  <form #plantsFrom="ngForm" (ngSubmit)="addPlant(plantsFrom.value)">
     <input type="text" placeholder="Название" name="name"  ngModel required>
     <input type="text" placeholder="Описание" name="description"  ngModel  >
     <input type="text" placeholder="Изображение" name="images" ngModel>
@@ -9,7 +9,7 @@
     <input type="text" placeholder="Полив" name="wetering" ngModel>
     <input type="text" placeholder="Температура" name="temperature" ngModel>
     <!-- <input class="btn" type="submit" value="Добавить растение"/> -->
-    <button class="btn" type="submit" (click)="addPlant()">Добавить</button>
+    <button class="btn" type="submit" >Добавить</button>
   </form>
 </div>
 

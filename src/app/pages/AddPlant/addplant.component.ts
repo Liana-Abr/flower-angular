@@ -8,21 +8,16 @@ import {Component} from "@angular/core";
 })
 
 export class AddPlant {
- data : {name: string, description: string, images: string, category: string, sunlight: number, watering: string, temperature: string }[] = []
+ plants : {name: string, description: string, images: string, category: string, sunlight: number, watering: string, temperature: string }[] = []
   constructor(private http: HttpClient){
-
   }
 
-  addPlant(self = this){
-    
-    const headers = new HttpHeaders({ "Accept": "application/json","Content-Type": "application/json"});
-    this.http.post(
-      'https://api.petiteweb.dev/plants', 
-      this.data, {headers: headers})
-    .subscribe((res) =>{
-      console.log(res);
+  addPlant(plants){
+    this.http.post<{name: string}>('https://api.petiteweb.dev/plants', plants)
+      .subscribe((res) =>{
+        console.log(res)
 
-    });
+      })
   }
 
 

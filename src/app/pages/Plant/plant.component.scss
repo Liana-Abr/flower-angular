@@ -120,6 +120,9 @@ img {
 
 .product-image {
   display: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image-list {
@@ -140,9 +143,7 @@ img {
       &.active {
         display: block;
         margin: 0 0 0.75rem 0;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
       }
     }
   }

@@ -16,9 +16,9 @@
     <div class="column-xs-12 column-md-5">
       <div class="description">
         <p>{{Plant.description}}</p>
-        <p>Watering: </p>
-        <p>Sunlight: </p>
-        <p>Temperature: </p>
+        <p><i class="bi bi-droplet"></i> Полив: {{Plant.watering || "не указано"}}</p>
+        <p><i class="bi bi-brightness-high"></i> Солнце: {{Plant.sunlight || "не указано"}}</p>
+        <p><i class="bi bi-thermometer-half"></i> Температура: {{Plant.temperature || "не указано"}}</p>
       </div>
     </div>
   </div>

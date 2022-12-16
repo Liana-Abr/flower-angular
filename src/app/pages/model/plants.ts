@@ -1,10 +1,10 @@
 export class Plants{
-    name: string; 
+    name: string;
     description: string;
-    images: string; 
+    images: string;
     category: string;
     sunlight: number;
     watering: string;
     temperature: string;
-    id?: string;
+    _id: string;
 }

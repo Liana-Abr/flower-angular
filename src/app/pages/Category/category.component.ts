@@ -1,45 +1,55 @@
-import { Plants } from './../model/plants';
+import { HttpBackend, HttpClient } from "@angular/common/http";
 import {Component, OnInit} from "@angular/core";
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from "rxjs/operators";
-import {ActivatedRoute} from "@angular/router";
+import { Plants } from "../model/plants";
 
 @Component({
-  selector: "category-page",
+  selector:"category-page",
   templateUrl: "./category.component.html",
   styleUrls: ["./category.component.scss"]
 })
-export class CategoryPage implements OnInit{
-  allPlants: Plants[] = [];
-  category: string[] = ["Домашние", "Уличные", "Садовые"];
-  constructor(route: ActivatedRoute,private http: HttpClient) {
-    this.category = route.snapshot.params["category"];
+
+export class CategoryPage  implements OnInit{
+  category: string[] = ["Домашние", "Уличные", "Садовые"]
+  allPlants: Plants[] = []
+
+
+  constructor(private http: HttpClient){
+
+  }
+  reloadCurrentPage() {
+    window.location.reload();
   }
 
   ngOnInit() {
-    this.fetchProducts();
+    this.fetchPlants()
   }
 
-  onProductsFetch(){
-    this.fetchProducts()
+  onPlantCreate(plants: {name: string, description: string, images: string[], category: string, sunlight: number, watering:number, temperature: number}){
+    console.log(plants)
+    this.http.post<{name: string}>('https://api.petiteweb.dev/plants', plants)
+      .subscribe((res) =>{
+        console.log(res)
+        alert("Ваше растение было добавлено")
+        this.reloadCurrentPage()
+      })
   }
+  private fetchPlants(){
+    this.http.get<{[key: string]: Plants}>('https://api.petiteweb.dev/plants')
+      .pipe(map((res) => {
+        const plants = []
+        for(const key in res){
+          if(res.hasOwnProperty(key)){
+            plants.push({...res[key], id: key})
+            console.log(res)
+          }
 
-  private fetchProducts(){
-    this.http.get<{[key: string]: Plants}>("https://api.petiteweb.dev/plants/")
-    .pipe(map((res: {[key: string]: Plants}) =>{
-      const plants = [];
-      for( const key in res ){
-        if(res.hasOwnProperty(key)){
-          plants.push({...res[key], id: key})
         }
-      }
-      return plants;
-    }))
-    .subscribe((Plants)=>{
-      console.log(Plants);
-      this.allPlants = Plants;
-    })
+        return plants;
+      }))
+      .subscribe((plants)=>{
+        console.log(plants)
+        this.allPlants = plants;
+      })
   }
-
-
 }

@@ -1,9 +1,7 @@
 <h1>{{category}}</h1>
 <div class="cards">
-    <a class="card"  *ngFor="let plant of allPlants" [routerLink]="[plant.id]">
-        <img src="{{plant.images}}" alt="no photo"/>
-        <p>{{plant.name}}</p>
-    </a>
-
+  <a class="card" *ngFor="let plt of allPlants" routerLink="/plant/{{plt._id}}">
+    <img src="{{plt.images}}" alt="no photo" width="350">
+    <p>{{plt.name || "plant"}}</p>
+  </a>
 </div>
-

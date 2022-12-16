@@ -1,10 +1,10 @@
 <div class="container">
   <div class="grid product">
     <div class="column-xs-12 column-md-7">
-      <h1>Plant</h1>
+      <h1>{{Plant.name}}</h1>
       <div class="product-gallery">
         <div class="product-image">
-          <img class="active" src="https://img.freepik.com/free-vector/organic-flat-houseplant-collection_23-2148915162.jpg?w=2000" alt="no photo">
+          <img class="active" src="{{Plant.images}}" alt="no photo">
         </div>
         <ul class="image-list">
           <li class="image-item"><img style="background-color: #777;"></li>
@@ -15,7 +15,7 @@
     </div>
     <div class="column-xs-12 column-md-5">
       <div class="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda dolore dolores doloribus neque nostrum quis sed temporibus voluptas.</p>
+        <p>{{Plant.description}}</p>
         <p>Watering: </p>
         <p>Sunlight: </p>
         <p>Temperature: </p>
